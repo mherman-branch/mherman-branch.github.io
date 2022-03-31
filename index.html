@@ -13,6 +13,26 @@
     // init Branch
     branch.init('key_live_fn4MEMAnjEUVJvsZm3V00gebztoYo1ID', function(err, data) {
 			console.log(err, data);
+
+			var linkData = {
+			  campaign: 'content 123',
+			  channel: 'facebook',
+			  feature: 'dashboard',
+			  stage: 'new user',
+			  tags: [ 'tag1', 'tag2', 'tag3' ],
+			  alias: '',
+			  data: {
+			    'custom_bool': true,
+			    'custom_int': Date.now(),
+			    'custom_string': 'hello',
+			    '$og_title': 'Title',
+			    '$og_description': 'Description'
+			  }
+			};
+
+			branch.link(linkData, function(error, link){
+				console.log(link);
+			});
 	});
 
 </script>
