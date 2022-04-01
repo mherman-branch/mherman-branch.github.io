@@ -115,3 +115,41 @@ function customEvent () {
 		   function(err) { console.log(err); }
 		);
 	}
+
+	function viewWords () {
+		var event_and_custom_data = {
+   			"noun": "Branch",
+   			"verb": "Grow",
+   			"adj": "Skyrocket",
+   			"story": "0"
+		};
+
+		var content_items = {
+		   "$content_schema": "COMMERCE_PRODUCT",
+		   "$og_title": "MadLib Story",
+		   "$og_description": "Start loving your stories",
+		   "$canonical_identifier": "MadLib/1234",
+		   "$publicly_indexable": false,
+		   "$price": 101.2,
+		   "$locally_indexable": true,
+		   "$quantity": 1,
+		   "$sku": "1101123445",
+		   "$product_name": "MadLib Word",
+		   "$product_brand": "MadLib",
+		   "$product_category": "Story",
+		   "$product_variant": "XL",
+		   "$rating_average": 4.2,
+		   "$rating_count": 5,
+		   "$rating_max": 2.2,
+		};
+
+		var customer_event_alias = "Viewed Words of the Day";
+
+		branch.logEvent(
+		   "VIEW_ITEMS",
+		   event_and_custom_data,
+		   content_items,
+		   customer_event_alias,
+		   function(err) { console.log(err); }
+		);
+	}
