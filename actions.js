@@ -1,7 +1,6 @@
 function customEvent () {
 		var custom_data = {
-			"Custom_Event_Property_Key1": "Custom_Event_Property_val1",
-   			"Custom_Event_Property_Key2": "Custom_Event_Property_val2"
+			"MadLibs": "I love MadLibs!",
 		}
 
 		branch.logEvent(
