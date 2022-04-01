@@ -7,6 +7,7 @@
   <meta name="branch:deeplink:story" content="0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Branch Stories</title>
+  <link href="style.css" rel="stylesheet" />
   <script src="actions.js"></script>
   <script>
     // load Branch
@@ -15,15 +16,44 @@
     branch.init('key_live_fn4MEMAnjEUVJvsZm3V00gebztoYo1ID', function(err, data) {
 			console.log(err, data);
 	});
-
 </script>
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Welcome to Branch Stories.</p>
-<button type="button" onclick="completedRegistration()">Sign Up</button>
-<button type="button" onclick="customEvent()">Custom Event</button>
-<button type="button" onclick="addToCart()">Add to Cart</button>
-<button type="button" onclick="purchaseComplete()">Complete Purchase</button>
+<h1>Welcome to Branch Stories</h1>
+ <h3>MadLib of the Day</h3>
+  <div class="input-container">
+  	<div class="single-input">
+  		<div class="input-name">
+  			Noun
+  		</div>
+  		<div class="input-value">
+  			Scifi
+  		</div>
+  	</div>
+  	<div class="single-input">
+  		<div class="input-name">
+  			Verb
+  		</div>
+  		<div class="input-value">
+  			bees
+  		</div>
+  	</div>
+  	<div class="single-input">
+  		<div class="input-name">
+  			Adjective
+  		</div>
+  		<div class="input-value">
+  			yellow
+  		</div>
+  	</div>
+  	<div class="single-input">
+  		<div class="input-name">
+  			MadLib
+  		</div>
+  		<div class="input-value">
+  			stings
+  		</div>
+  	</div>
+  </div>
 </body>
 </html>
