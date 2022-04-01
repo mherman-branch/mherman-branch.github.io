@@ -36,7 +36,7 @@ main .button-container{
 
 .button-container button{
 	border: solid 2px #5E716A;
-	border-radius: .25rem;
+	border-radius: 24px;
 	font-weight:  bolder;
 	padding: .5rem .75rem;
 	cursor: pointer;
