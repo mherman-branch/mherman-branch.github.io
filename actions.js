@@ -4,7 +4,7 @@ function customEvent () {
 		}
 
 		branch.logEvent(
-    		event,
+    		"I Love MadLibs",
     		custom_data,
     		callback (err)
 		);
