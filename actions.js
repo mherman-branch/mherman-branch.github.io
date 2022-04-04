@@ -153,3 +153,7 @@ function customEvent () {
 		   function(err) { console.log(err); }
 		);
 	}
+
+	function openDeeplink () {
+		
+	}
