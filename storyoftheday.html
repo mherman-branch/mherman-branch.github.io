@@ -6,6 +6,9 @@
   branch.init('key_live_dm2I4K0XC9OUncuFN2BMilagzsbIY0Qo', function(err, data) {
    console.log(err, data);
   });
+  	var listener = function(event, data) { console.log(event, data); }
+	// Listen for all events
+	branch.addListener(listener);
   </script>
 <!-- Init Branch -->
   <meta name="branch:deeplink:noun" content="Branch" />
